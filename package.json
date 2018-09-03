@@ -1,0 +1,15 @@
+{
+  "name": "node-ovhdynhost",
+  "version": "0.0.1",
+  "description": "Simple DynHost updateter for OVH domains",
+  "main": "index.js",
+  "repository": "https://github.com/RunAge/js-ovhdynhost",
+  "author": "RunAge",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
