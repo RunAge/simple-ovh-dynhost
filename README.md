@@ -1,4 +1,4 @@
-# js-ovhdynhost
+# simple-ovh-dynhost
 Simple DynHost updateter for OVH domains
 
 # _env
@@ -6,7 +6,7 @@ Simple DynHost updateter for OVH domains
 `DOMAIN_LOGIN=`  
 `PASSWORD=`  
 `DOMAIN= #DOMAIN TO UPDATE`  
-`INTERVAL=5 #in minutes`
+`INTERVAL=5` in minutes
 
 # INSTALL
 
