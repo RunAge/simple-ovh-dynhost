@@ -1,0 +1,17 @@
+[ovh]
+domain = ""
+login = ""
+password = ""
+baseUrl = "https://www.ovh.com/nic"
+[ovh.defaultParams]
+system = "dyndns"
+
+[timer]
+interval = 5
+
+[ipify]
+baseUrlV4 = "https://api.ipify.org"
+baseUrlUni = "https://api64.ipify.org"
+
+[sod]
+onlyIpV4 = true
