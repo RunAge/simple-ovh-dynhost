@@ -9,6 +9,7 @@
   "author": "Robert \"RunAge\"Gajda",
   "license": "MIT",
   "private": false,
+  "keywords": ["dynhost", "ovh", "dyndns", "ip updater", "domain", "domain updater"],
   "scripts": {
     "start:dev": "NODE_ENV=development node --loader ts-node/esm --no-warnings src/main.ts",
     "build": "rimraf ./dist && tsc -p ./tsconfig.json",
