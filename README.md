@@ -1,6 +1,6 @@
 # simple-ovh-dynhost
 Simple DynHost updateter for OVH domains
-I have in plan to rewrite with Rust
+I have in plan to rewrite with Rust and create module system
 
 # Breaking Changes
 Move from `_env` file to `config.toml`
@@ -30,8 +30,13 @@ onlyIpV4 = true
 
 I choose toml as conifg format because its looks better and is easier to configure. Deal with it :D
 
-# INSTALL
+# How to use
 
-`npm install`
-`npm run start:dev`
-Profit...
+1. `npx simple-ovh-dynhost` - to start and generate config.
+2. Configure your config. (look above)
+3. `npx simple-ovh-dynhost` - to one time update your domian.
+4. `npx simple-ovh-dynhost -l` or `npx simple-ovh-dynhost --loop` - to start in loop mode and put in into screen or something
+5. Profit...
+
+# tldr
+If you are afraid of ipify service you can host your own instance of it https://github.com/rdegges/ipify-api or something with similar API responses

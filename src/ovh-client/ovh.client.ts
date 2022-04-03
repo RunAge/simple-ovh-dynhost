@@ -1,6 +1,7 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { AxiosInstance, AxiosResponse } from "axios";
 
 import { config as globalConfig, configSchema } from "../config/index.js";
+import { UpdateDto } from "./dto/update.dto.js";
 
 export class OvhClient {
   private client: AxiosInstance;
@@ -9,8 +10,8 @@ export class OvhClient {
     this.client.defaults.params = this.config.ovh.defaultParams;
   }
 
-  async updateDomain(ip: string) {
-    return this.client.get("/update", {
+  async updateDynDomain(ip: string): Promise<AxiosResponse<UpdateDto>> {
+    return this.client.get<UpdateDto>("/update", {
       params: {
         hostname: this.config.ovh.domain,
         myip: ip,
